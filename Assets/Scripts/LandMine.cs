@@ -3,14 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class LandMine : MonoBehaviour {
+	public Object particles;
+	void OnTriggerEnter(Collider other)
+	{
+		Instantiate (particles);
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
 	}
 }

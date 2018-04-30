@@ -57,8 +57,10 @@
      <Compile Include="Assets\Scripts\DeathBarrier.cs" />
      <Compile Include="Assets\Scripts\DeathScript.cs" />
      <Compile Include="Assets\Scripts\DisablingLever.cs" />
+     <Compile Include="Assets\Scripts\DoorAndKey.cs" />
      <Compile Include="Assets\Scripts\FirstPersonController.cs" />
      <Compile Include="Assets\Scripts\GameController.cs" />
+     <Compile Include="Assets\Scripts\Key.cs" />
      <Compile Include="Assets\Scripts\LandMine.cs" />
      <Compile Include="Assets\Scripts\RemoveAfterComplete.cs" />
      <Compile Include="Assets\Scripts\ScoreOnDestroy.cs" />
