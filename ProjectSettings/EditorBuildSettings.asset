@@ -4,4 +4,10 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Lab_Malcom.unity
+    guid: cbc7dbd06515b44ab80211c720c8b02f
+  - enabled: 1
+    path: Assets/Scenes/Lab2.unity
+    guid: 465dd3b1936184d088f1800349be8dd4
