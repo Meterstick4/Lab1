@@ -4,21 +4,21 @@ using UnityEngine;
 
 public class WorldSwitcher : MonoBehaviour 
 {
-	public static GameObject player = null;
+	public static GameObject player;
 	public int toSwtich;
 	public Vector3 orgLocat;
 	public Vector3 tempLocat;
 	public Vector3 toSwitchLocOneTime;
 	private int switchTimes;
 	public bool miniMapOpen;
-	public GameObject map = null;
+	public GameObject map;
 
 	// Use this for initialization
 	void Awake () 
 	{
-		player = GameObject.Find ("FPSController");	
+		player = GameObject.Find ("Malcom");	
 		switchTimes = 0;
-		orgLocat = player.transform.position;
+		//orgLocat = player.transform.position;
 		toSwitchLocOneTime = new Vector3 (-360, 4, 1281);
 		tempLocat = new Vector3 (0, 2, 0);
 		DontDestroyOnLoad (player);
@@ -38,7 +38,7 @@ public class WorldSwitcher : MonoBehaviour
 			{
 				tempLocat = player.transform.position;
 			}
-			SceneManager.LoadScene (toSwtich);
+			SceneManager.LoadScene (++toSwtich);
 			player.transform.position = toSwitchLocOneTime;
 			orgLocat = tempLocat;
 			switchTimes++;
@@ -49,7 +49,7 @@ public class WorldSwitcher : MonoBehaviour
 			{
 				tempLocat = player.transform.position;
 			}
-			SceneManager.LoadScene (++toSwtich);
+			SceneManager.LoadScene (toSwtich++);
 			switchTimes++;
 			player.transform.position = orgLocat;
 			orgLocat = tempLocat;
@@ -70,13 +70,13 @@ public class WorldSwitcher : MonoBehaviour
 		{
 			if(!miniMapOpen)
 			{
-				//map.SetActive (true);
+				map.SetActive (true);
 				miniMapOpen = true;
 				return;
 			}
 			else
 			{
-				//map.SetActive (false);
+				map.SetActive (false);
 				miniMapOpen = false;
 				return;
 			}
