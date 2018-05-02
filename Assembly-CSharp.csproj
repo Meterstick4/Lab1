@@ -56,17 +56,15 @@
      <Compile Include="Assets\Scripts\Coin.cs" />
      <Compile Include="Assets\Scripts\DeathBarrier.cs" />
      <Compile Include="Assets\Scripts\DeathScript.cs" />
-<<<<<<< HEAD
-     <Compile Include="Assets\Scripts\DisablingLever.cs" />
      <Compile Include="Assets\Scripts\DoorAndKey.cs" />
-=======
->>>>>>> 600cf5993346a5a87fefc8c6555560d41ca3382f
      <Compile Include="Assets\Scripts\FirstPersonController.cs" />
      <Compile Include="Assets\Scripts\GameController.cs" />
      <Compile Include="Assets\Scripts\Key.cs" />
      <Compile Include="Assets\Scripts\LandMine.cs" />
+     <Compile Include="Assets\Scripts\PressurePlate.cs" />
      <Compile Include="Assets\Scripts\RemoveAfterComplete.cs" />
      <Compile Include="Assets\Scripts\ScoreOnDestroy.cs" />
+     <Compile Include="Assets\Scripts\Spikes.cs" />
      <Compile Include="Assets\Scripts\Timer.cs" />
      <Compile Include="Assets\Scripts\WorldController.cs" />
      <Compile Include="Assets\Scripts\WorldSwitcher.cs" />
