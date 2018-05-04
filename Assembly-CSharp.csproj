@@ -53,6 +53,7 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\Button.cs" />
      <Compile Include="Assets\Scripts\ButtonCodeScript.cs" />
+     <Compile Include="Assets\Scripts\Cameraa.cs" />
      <Compile Include="Assets\Scripts\Coin.cs" />
      <Compile Include="Assets\Scripts\DeathBarrier.cs" />
      <Compile Include="Assets\Scripts\DeathScript.cs" />

@@ -16,7 +16,7 @@ public class WorldSwitcher : MonoBehaviour
 	// Use this for initialization
 	void Awake () 
 	{
-		player = GameObject.Find ("Malcom");	
+		player = GameObject.FindGameObjectWithTag ("Player");
 		switchTimes = 0;
 		//orgLocat = player.transform.position;
 		toSwitchLocOneTime = new Vector3 (-360, 4, 1281);
