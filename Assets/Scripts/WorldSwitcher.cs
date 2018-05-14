@@ -32,30 +32,21 @@ public class WorldSwitcher : MonoBehaviour
 	void Update () 
 	{
 		
-		if(Input.GetKeyDown("o") && switchTimes == 0)
+
+		if(Input.GetKeyDown("o") && switchTimes % 2 == 0)
 		{
 			if(orgLocat != player.transform.position)
 			{
 				tempLocat = player.transform.position;
 			}
 			SceneManager.LoadScene (++toSwtich);
-			player.transform.position = toSwitchLocOneTime;
-			orgLocat = tempLocat;
-			switchTimes++;
-		}
-		else if(Input.GetKeyDown("o") && switchTimes % 2 == 0)
-		{
-			if(orgLocat != player.transform.position)
-			{
-				tempLocat = player.transform.position;
-			}
-			SceneManager.LoadScene (toSwtich++);
 			switchTimes++;
 			player.transform.position = orgLocat;
 			orgLocat = tempLocat;
 		}
 		else if(Input.GetKeyDown("o"))
 		{
+			Debug.Log ("HJKLJ");
 			if(orgLocat != player.transform.position)
 			{
 				tempLocat = player.transform.position;

@@ -47,16 +47,14 @@ public class Cameraa : MonoBehaviour
 
 		if (Physics.Raycast(GameObject.FindGameObjectWithTag ("camba").transform.position, GameObject.FindGameObjectWithTag ("camba").transform.forward * ViewDistance, out hit, ViewDistance))
 		{
+			
 			if(hit.transform.gameObject.tag == "Player")
 			{
 				Debug.Log(gameObject.name + " CAN see Player");
 			}
 
 		}
-		//if (Physics.SphereCast (GameObject.FindGameObjectWithTag ("camba").transform.position 
-	//	{
-		//	Debug.Log ("LKJLKJLK");
-		//}
+
 			
 
 	}
